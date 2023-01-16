@@ -9,8 +9,6 @@ export const Prices = () => {
   function plus(){
     if(number >= 0){
       setNumber(number + 125.00)
-      parseFloat(number)
-     console.log(parseFloat(number.toFixed(2)))
       value.current = value.current + 1
     }
   }
@@ -37,10 +35,10 @@ export const Prices = () => {
             <div className={styled.values}>
               <div className={styled.value}>
                 <h1 className={styled.valueCurrent}>
-                  {number}
-                  {Intl.NumberFormat('pt-BR', {
+
+                  {Intl.NumberFormat('en-US', {
                       style: 'currency',
-                      currency: 'BRL',
+                      currency: 'USD',
                     }).format(Number(number))}
                 </h1>
                 <h1 className={styled.discount}>50%</h1>
@@ -59,6 +57,7 @@ export const Prices = () => {
             </div>
          </div>
         </div>
+
     </div>
   )
 }
