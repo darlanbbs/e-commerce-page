@@ -36,7 +36,13 @@ export const Prices = () => {
          <div className={styled.under}>
             <div className={styled.values}>
               <div className={styled.value}>
-                <h1 className={styled.valueCurrent}>{number}</h1>
+                <h1 className={styled.valueCurrent}>
+                  {number}
+                  {Intl.NumberFormat('pt-BR', {
+                      style: 'currency',
+                      currency: 'BRL',
+                    }).format(Number(number))}
+                </h1>
                 <h1 className={styled.discount}>50%</h1>
               </div>
                 <div className={styled.fakeValue}>$250,00</div>
@@ -53,7 +59,6 @@ export const Prices = () => {
             </div>
          </div>
         </div>
-
     </div>
   )
 }
