@@ -1,0 +1,176 @@
+.over{
+    display: flex;
+    justify-content: center;
+ 
+    flex-direction: column;
+    gap: 15px;
+}
+
+.titles{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.titleOver{
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.titleUnder{
+    color: black;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.text{
+    font-weight: 400;
+    font-size: 25px;
+    color: #999f;
+}
+
+
+.values{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.value{
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+}
+
+.valueCurrent{
+    color: #000;
+    font-weight: 700;
+}
+
+.discount{
+    background-color: rgb(244, 240, 240);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    border-radius: 8px;
+    color: hsl(26, 100%, 55%);
+ 
+}
+
+.fakeValue{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #999;
+    text-decoration: line-through;
+    font-size: 20px;
+}
+.purchaseLocal{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 15px;
+    gap: 20px;
+    transition: all 0.6s;
+}
+.purchaseLocal:hover{
+    cursor: pointer;
+}
+.quantityLocal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+    padding:20px;
+    background-color: rgb(244, 240, 240);
+    border-radius: 8px;
+    width: 36%;
+}
+.quantityLocal div{
+    font-size: 23px;
+    font-weight: bold;
+}
+.imagePlus{
+    height: 20px;
+}
+
+.imageMinus{
+    height: 10px;
+}
+
+.buttonBuy button{
+     width: 400px;
+     height: 72px;
+    border-radius: 8px;
+    background-color: hsl(26, 100%, 55%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+
+.buttonBuy img{
+    filter:brightness(100)
+}
+.buttonBuy button:hover{
+    opacity: 0.9;
+}
+
+@media(max-width:1200px){
+   
+    .purchaseLocal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        gap: 15px;
+    }
+    .buttonBuy,.quantityLocal{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        text-align: start;
+        width: 90%;
+    }
+    .values{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+
+@media(max-width:768px){
+    .purchaseLocal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        width: 300px;
+    }
+    .buttonBuy,.quantityLocal{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        text-align: start;
+        width: 90%;
+    }
+    
+    .buttonBuy button{
+        text-align: center;
+    }
+
+}
