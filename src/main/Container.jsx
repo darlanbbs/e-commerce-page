@@ -1,12 +1,16 @@
 import React from 'react'
-import styled from './Container.module.css'
-import { Row,Col } from 'reactstrap';
-import FsLightbox from "fslightbox-react";
-import { Prices } from '../components/Prices'
+
 import { useState } from 'react'
+
+import { Row,Col } from 'reactstrap';
+import { Prices } from '../components/Prices'
+
+import styled from './Container.module.css'
+
+
 export const Container = () => {
     const [image, setImage] = useState('image-product-1.jpg')
-    const [toggler, setToggler] = useState(false);
+
     
 
   return (
@@ -19,13 +23,10 @@ export const Container = () => {
               <img src={image} alt="snickerTenis" className={styled.image} />
             </div>
             <div className={styled.thumbs}>
-              <img src="image-product-1-thumbnail.jpg" alt="" onClick={() => setImage('image-product-1.jpg')} onDoubleClick={() => setToggler(!toggler)}/>
-              <img src="image-product-2-thumbnail.jpg" alt="" onClick={() => setImage('image-product-2.jpg')}
-              onDoubleClick={() => setToggler(!toggler)}/>
-              <img src="image-product-3-thumbnail.jpg" alt="" onClick={() => setImage('image-product-3.jpg')}
-              onDoubleClick={() => setToggler(!toggler)}/>
-              <img src="image-product-4-thumbnail.jpg" alt="" onClick={() => setImage('image-product-4.jpg')}
-              onDoubleClick={() => setToggler(!toggler)}/>
+              <img src="image-product-1-thumbnail.jpg" alt="" onClick={() => setImage('image-product-1.jpg')} />
+              <img src="image-product-2-thumbnail.jpg" alt="" onClick={() => setImage('image-product-2.jpg')}/>
+              <img src="image-product-3-thumbnail.jpg" alt="" onClick={() => setImage('image-product-3.jpg')}/>
+              <img src="image-product-4-thumbnail.jpg" alt="" onClick={() => setImage('image-product-4.jpg')}/>
             </div>
            </div>
            </Col>
@@ -33,15 +34,6 @@ export const Container = () => {
             <Prices/>
            </Col>
         </Row>
-        <FsLightbox
-				toggler={toggler}
-				sources={[
-					'/image-product-1.jpg',
-					'/image-product-2.jpg',
-					'/image-product-3.jpg',
-					'/image-product-4.jpg'
-				]}
-			/>
       </div>
     </div>
   )
