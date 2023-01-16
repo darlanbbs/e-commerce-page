@@ -25,5 +25,3 @@ The challenge E-commerce product page is a challange by (frontendmentor.io/chall
   - Install: `npm install reactstrap react react-dom`
   - Install: `npm install --save bootstrap`
 
-- React lightboxjs
-  - Install `fslightbox-react`
