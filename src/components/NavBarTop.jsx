@@ -48,39 +48,3 @@ export function NavBarTop(args) {
     </div>
   );
 }
-
-
-
-
-
-
-
-// import React from 'react'
-// import styled from './NavBarTop.module.css'
-
-// export const NavBarTop = () => {
-//   return (
-//     <div>
-//         <nav>
-//             <div className={styled.bothSide}>
-//                 <div className={styled.leftSide}>
-//                     <div className={styled.logo}>Sneakers</div>
-//                     <ul className={styled.listnavBar}>
-//                         <li>Collections</li>
-//                         <li>Men</li>
-//                         <li>Women</li>
-//                         <li>About</li>
-//                         <li>Contact</li>
-//                     </ul>
-//                 </div>
-//                 <div className={styled.rightSide}>
-//                     <ul className={styled.listnavBar}>
-//                         <li><img src="/icon-cart.svg" alt="" /></li>
-//                         <li><img src="/image-avatar.png" alt=""  className={styled.imageAvatar}/></li>
-//                     </ul>
-//                 </div>
-//             </div>
-//         </nav>
-//     </div>
-//   )
-// }
